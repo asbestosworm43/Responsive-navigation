@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/styles.css">
+ 
+    <title>Document</title>
+</head>
+<body>
+<!--
+style="background-image: url(images/m-bBackround.jpg); 
+min-height: 500px;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: center;"
+-->
+
+ <div class="hHead" style="width: 80%; box-shadow: var(--box-shadow-primary); ">
+    <nav class="navbar">
+        <ul class="navbar-nav">
+           <li class="logo">
+               <a href="#" class="nav-link">
+                <svg 
+                 aria-hidden="true" 
+                 focusable="false" 
+                 data-prefix="fas" 
+                 data-icon="globe" 
+                 class="svg-inline--fa fa-globe" 
+                 role="img" 
+                 xmlns="http://www.w3.org/2000/svg" 
+                 viewBox="0 0 512 512">
+                
+                 <path fill="currentColor" 
+                 d="M186.8 26.24C119.1 46.6 64.08 96.01 36.1 160h99.97C145.7 104.1 163.6 57.44 186.8 26.24zM160 256c0 22.55 1.277 43.86 3.623 64h184.8c2.346-20.14 3.623-41.45 3.623-64s-1.277-43.86-3.623-64H163.6C161.3 212.1 160 233.5 160 256zM343.6 160c-16.25-88.04-53.37-144-87.57-144S184.7 71.96 168.4 160H343.6zM475.9 160c-27.98-63.99-83-113.4-150.7-133.8C348.4 57.44 366.3 104.1 375.9 160H475.9zM325.2 485.8C392.9 465.4 447.9 415.1 475.9 352h-99.97C366.3 407.9 348.4 454.6 325.2 485.8zM487.1 192h-106.6c2.248 20.5 3.485 41.84 3.485 64s-1.237 43.5-3.485 64h106.6c5.641-20.4 8.894-41.8 8.894-64S492.7 212.4 487.1 192zM168.4 352c16.25 88.04 53.37 144 87.57 144s71.32-55.96 87.57-144H168.4zM128 256c0-22.16 1.237-43.5 3.485-64H24.89c-5.641 20.4-8.895 41.8-8.895 64s3.254 43.6 8.895 64H131.5C129.2 299.5 128 278.2 128 256zM36.1 352c27.98 63.99 82.1 113.4 150.7 133.8C163.6 454.6 145.7 407.9 136.1 352H36.1z">
+                 </path>
+                </svg>
+                <span class="link-text">GloB</span>
+               </a>
+           </li>
+
+           <li class="nav-item">
+            <a href="#" class="nav-link">
+                <svg 
+                 aria-hidden="true" 
+                 focusable="false" 
+                 data-prefix="fas" 
+                 data-icon="dumpster-fire" 
+                 class="svg-inline--fa fa-dumpster-fire" 
+                 role="img" 
+                 xmlns="http://www.w3.org/2000/svg" 
+                 viewBox="0 0 640 512">
+                 
+                 <path fill="currentColor" 
+                 d="M418.8 104.2L404.6 32H304.1L304 159.1h60.77C381.1 140.7 399.1 121.8 418.8 104.2zM272.1 32.12H171.5L145.9 160.1h126.1L272.1 32.12zM461.3 104.2c18.25 16.25 35.51 33.62 51.14 51.49c5.751-5.623 11.38-11.12 17.38-16.37l21.26-18.98l21.25 18.98c1.125 .9997 2.125 2.124 3.126 3.124c-.125-.7498 .2501-1.5 0-2.249l-24-95.97c-1.625-7.123-8.127-12.12-15.38-12.12H437.2l12.25 61.5L461.3 104.2zM16 160.1l97.26-.0223l25.64-127.9h-98.89c-7.251 0-13.75 4.999-15.5 12.12L.5001 140.2C-2.001 150.3 5.626 160.1 16 160.1zM340.6 192.1L32.01 192.1l4.001 31.99L16 224.1C7.252 224.1 0 231.3 0 240.1V272c0 8.748 7.251 15.1 16 15.1l28.01 .0177l20 159.1L64.01 464C64.01 472.8 71.26 480 80.01 480h32.01c8.752 0 16-7.248 16-15.1v-15.1l208.8-.002c-30.13-33.74-48.73-77.85-48.73-126.3C288.1 285.8 307.9 238.8 340.6 192.1zM551.2 163.3c-14.88 13.25-28.38 27.12-40.26 41.12c-19.5-25.74-43.63-51.99-71.01-76.36c-70.14 62.73-120 144.2-120 193.6C319.1 409.1 391.6 480 479.1 480s160-70.87 160-158.3C640.1 285 602.1 209.4 551.2 163.3zM532.6 392.6c-14.75 10.62-32.88 16.1-52.51 16.1c-49.01 0-88.89-33.49-88.89-87.98c0-27.12 16.5-50.99 49.38-91.85c4.751 5.498 67.14 87.98 67.14 87.98l39.76-46.99c2.876 4.874 5.375 9.497 7.75 13.1C573.9 321.5 565.1 368.4 532.6 392.6z"></path>
+                </svg>
+              <span class="link-text">Start-Up</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <svg 
+                 aria-hidden="true" 
+                 focusable="false" 
+                 data-prefix="fas" 
+                 data-icon="crop-simple" 
+                 class="svg-inline--fa fa-crop-simple" 
+                 role="img"
+                 xmlns="http://www.w3.org/2000/svg" 
+                 viewBox="0 0 512 512">
+                
+                 <path fill="currentColor"
+                 d="M488 352H448V96c0-17.62-14.38-32-32-32H192v96h160v328c0 
+                 13.25 10.75 24 24 24h48c13.25 0 24-10.75 24-24V448h40c13.25 
+                 0 24-10.75 24-24v-48C512 362.8 501.3 352 488 352zM160 24C160 10.75 
+                 149.2 0 136 0h-48C74.75 0 64 10.75 64 24V64H24C10.75 64 0 
+                 74.75 0 88v48C0 149.2 10.75 160 24 160H64v256c0 17.62 14.38 
+                 32 32 32h224v-96H160V24z"></path>
+                </svg>
+              <span class="link-text">Sign-Up</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <svg 
+                 aria-hidden="true" 
+                 focusable="false" 
+                 data-prefix="fas" 
+                 data-icon="fire-flame-curved" 
+                 class="svg-inline--fa fa-fire-flame-curved" 
+                 role="img" 
+                 xmlns="http://www.w3.org/2000/svg" 
+                 viewBox="0 0 384 512">
+                 
+                 <path fill="currentColor" 
+                 d="M384 319.1C384 425.9 297.9 512 192 512s-192-86.13-192-192c0-58.67 27.82-106.8 54.57-134.1C69.54 169.3 96 179.8 96 201.5v85.5c0 35.17 27.97 64.5 63.16 64.94C194.9 352.5 224 323.6 224 288c0-88-175.1-96.12-52.15-277.2c13.5-19.72 44.15-10.77 44.15 13.03C215.1 127 384 149.7 384 319.1z"></path>
+                </svg>
+              <span class="link-text">Meet-Up</span>
+            </a>
+
+            <a href="#" class="nav-link last-child">
+                <svg 
+                  aria-hidden="true" 
+                 focusable="false" 
+                 data-prefix="fas" 
+                 data-icon="user-secret" 
+                 class="svg-inline--fa fa-user-secret" 
+                 role="img" 
+                 xmlns="http://www.w3.org/2000/svg" 
+                 viewBox="0 0 448 512">
+                
+                 <path fill="currentColor" 
+                 d="M377.7 338.8l37.15-92.87C419 235.4 411.3 224 399.1 224h-57.48C348.5 209.2 352 193 352 176c0-4.117-.8359-8.057-1.217-12.08C390.7 155.1 416 142.3 416 128c0-16.08-31.75-30.28-80.31-38.99C323.8 45.15 304.9 0 277.4 0c-10.38 0-19.62 4.5-27.38 10.5c-15.25 11.88-36.75 11.88-52 0C190.3 4.5 181.1 0 170.7 0C143.2 0 124.4 45.16 112.5 88.98C63.83 97.68 32 111.9 32 128c0 14.34 25.31 27.13 65.22 35.92C96.84 167.9 96 171.9 96 176C96 193 99.47 209.2 105.5 224H48.02C36.7 224 28.96 235.4 33.16 245.9l37.15 92.87C27.87 370.4 0 420.4 0 477.3C0 496.5 15.52 512 34.66 512H413.3C432.5 512 448 496.5 448 477.3C448 420.4 420.1 370.4 377.7 338.8zM176 479.1L128 288l64 32l16 32L176 479.1zM271.1 479.1L240 352l16-32l64-32L271.1 479.1zM320 186C320 207 302.8 224 281.6 224h-12.33c-16.46 0-30.29-10.39-35.63-24.99C232.1 194.9 228.4 192 224 192S215.9 194.9 214.4 199C209 213.6 195.2 224 178.8 224h-12.33C145.2 224 128 207 128 186V169.5C156.3 173.6 188.1 176 224 176s67.74-2.383 96-6.473V186z">
+                 </path>
+               </svg>
+              <span class="link-text">Spy-Up</span>
+            </a>
+           </li>
+        
+        
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Tech Bubble Is Bursting...</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Atque eos nihil libero id ut ea in temporibus eligendi qui 
+            magni aspernatur, 
+            quidem eum rerum
+            cum laboriosam saepe aliquid recusandae commodi! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tempora nostrum distinctio mollitia, 
+            ipsam tempore fugiat porro, 
+            ullam illo voluptatibus corrupti nesciunt ipsa? 
+            Odio culpa totam fugiat illo voluptatem cupiditate tempore. 
+            Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit. 
+            Id accusamus voluptas odit iste ullam reprehenderit soluta, 
+            voluptatem a, 
+            sit eos aliquam fugit perferendis esse sapiente repellendus nulla est blanditiis nihil. 
+            Lorem ipsum, 
+            dolor sit amet consectetur adipisicing elit. 
+            Odio provident ipsa libero necessitatibus assumenda nobis id non atque eum in ullam, 
+            ducimus quia sequi optio eveniet delectus ut. Magni, dicta. 
+            Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit.
+            Ullam animi aut recusandae dolorem commodi quod amet consequuntur placeat inventore, 
+            velit quam error, est aliquid provident natus enim rerum aliquam esse. 
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. 
+            Sequi harum amet illum eligendi, 
+            cupiditate repellat nostrum! 
+            Sunt harum eveniet quam necessitatibus. 
+            Labore magni sed pariatur officiis ab tempora, 
+            perspiciatis rerum.</p>
+            <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Atque eos nihil libero id ut ea in temporibus eligendi qui 
+            magni aspernatur, 
+            quidem eum rerum
+            cum laboriosam saepe aliquid recusandae commodi! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tempora nostrum distinctio mollitia, 
+            ipsam tempore fugiat porro, 
+            ullam illo voluptatibus corrupti nesciunt ipsa? 
+            Odio culpa totam fugiat illo voluptatem cupiditate tempore. 
+            Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit. 
+            Id accusamus voluptas odit iste ullam reprehenderit soluta, 
+            voluptatem a, 
+            sit eos aliquam fugit perferendis esse sapiente repellendus nulla est blanditiis nihil. 
+            Lorem ipsum, 
+            dolor sit amet consectetur adipisicing elit. 
+            Odio provident ipsa libero necessitatibus assumenda nobis id non atque eum in ullam, 
+            ducimus quia sequi optio eveniet delectus ut. Magni, dicta. 
+            Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit.
+            Ullam animi aut recusandae dolorem commodi quod amet consequuntur placeat inventore, 
+            velit quam error, est aliquid provident natus enim rerum aliquam esse. 
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. 
+            Sequi harum amet illum eligendi, 
+            cupiditate repellat nostrum! 
+            Sunt harum eveniet quam necessitatibus. 
+            Labore magni sed pariatur officiis ab tempora, 
+            perspiciatis rerum.</p>
+            <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Atque eos nihil libero id ut ea in temporibus eligendi qui 
+            magni aspernatur, 
+            quidem eum rerum
+            cum laboriosam saepe aliquid recusandae commodi! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tempora nostrum distinctio mollitia, 
+            ipsam tempore fugiat porro, 
+            ullam illo voluptatibus corrupti nesciunt ipsa? 
+            Odio culpa totam fugiat illo voluptatem cupiditate tempore. 
+            Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit. 
+            Id accusamus voluptas odit iste ullam reprehenderit soluta, 
+            voluptatem a, 
+            sit eos aliquam fugit perferendis esse sapiente repellendus nulla est blanditiis nihil. 
+            Lorem ipsum, 
+            dolor sit amet consectetur adipisicing elit. 
+            Odio provident ipsa libero necessitatibus assumenda nobis id non atque eum in ullam, 
+            ducimus quia sequi optio eveniet delectus ut. Magni, dicta. 
+            Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit.
+            Ullam animi aut recusandae dolorem commodi quod amet consequuntur placeat inventore, 
+            velit quam error, est aliquid provident natus enim rerum aliquam esse. 
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. 
+            Sequi harum amet illum eligendi, 
+            cupiditate repellat nostrum! 
+            Sunt harum eveniet quam necessitatibus. 
+            Labore magni sed pariatur officiis ab tempora, 
+            perspiciatis rerum.</p>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Atque eos nihil libero id ut ea in temporibus eligendi qui 
+            magni aspernatur, 
+            quidem eum rerum
+            cum laboriosam saepe aliquid recusandae commodi! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tempora nostrum distinctio mollitia, 
+            ipsam tempore fugiat porro, 
+            ullam illo voluptatibus corrupti nesciunt ipsa? 
+            Odio culpa totam fugiat illo voluptatem cupiditate tempore. 
+            Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit. 
+            Id accusamus voluptas odit iste ullam reprehenderit soluta, 
+            voluptatem a, 
+            sit eos aliquam fugit perferendis esse sapiente repellendus nulla est blanditiis nihil. 
+            Lorem ipsum, 
+            dolor sit amet consectetur adipisicing elit. 
+            Odio provident ipsa libero necessitatibus assumenda nobis id non atque eum in ullam, 
+            ducimus quia sequi optio eveniet delectus ut. Magni, dicta. 
+            Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit.
+            Ullam animi aut recusandae dolorem commodi quod amet consequuntur placeat inventore, 
+            velit quam error, est aliquid provident natus enim rerum aliquam esse. 
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. 
+            Sequi harum amet illum eligendi, 
+            cupiditate repellat nostrum! 
+            Sunt harum eveniet quam necessitatibus. 
+            Labore magni sed pariatur officiis ab tempora, 
+            perspiciatis rerum.</p>
+            <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Atque eos nihil libero id ut ea in temporibus eligendi qui 
+            magni aspernatur, 
+            quidem eum rerum
+            cum laboriosam saepe aliquid recusandae commodi! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tempora nostrum distinctio mollitia, 
+            ipsam tempore fugiat porro, 
+            ullam illo voluptatibus corrupti nesciunt ipsa? 
+            Odio culpa totam fugiat illo voluptatem cupiditate tempore. 
+            Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit. 
+            Id accusamus voluptas odit iste ullam reprehenderit soluta, 
+            voluptatem a, 
+            sit eos aliquam fugit perferendis esse sapiente repellendus nulla est blanditiis nihil. 
+            Lorem ipsum, 
+            dolor sit amet consectetur adipisicing elit. 
+            Odio provident ipsa libero necessitatibus assumenda nobis id non atque eum in ullam, 
+            ducimus quia sequi optio eveniet delectus ut. Magni, dicta. 
+            Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit.
+            Ullam animi aut recusandae dolorem commodi quod amet consequuntur placeat inventore, 
+            velit quam error, est aliquid provident natus enim rerum aliquam esse. 
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. 
+            Sequi harum amet illum eligendi, 
+            cupiditate repellat nostrum! 
+            Sunt harum eveniet quam necessitatibus. 
+            Labore magni sed pariatur officiis ab tempora, 
+            perspiciatis rerum.</p>
+            <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Atque eos nihil libero id ut ea in temporibus eligendi qui 
+            magni aspernatur, 
+            quidem eum rerum
+            cum laboriosam saepe aliquid recusandae commodi! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tempora nostrum distinctio mollitia, 
+            ipsam tempore fugiat porro, 
+            ullam illo voluptatibus corrupti nesciunt ipsa? 
+            Odio culpa totam fugiat illo voluptatem cupiditate tempore. 
+            Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit. 
+            Id accusamus voluptas odit iste ullam reprehenderit soluta, 
+            voluptatem a, 
+            sit eos aliquam fugit perferendis esse sapiente repellendus nulla est blanditiis nihil. 
+            Lorem ipsum, 
+            dolor sit amet consectetur adipisicing elit. 
+            Odio provident ipsa libero necessitatibus assumenda nobis id non atque eum in ullam, 
+            ducimus quia sequi optio eveniet delectus ut. Magni, dicta. 
+            Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit.
+            Ullam animi aut recusandae dolorem commodi quod amet consequuntur placeat inventore, 
+            velit quam error, est aliquid provident natus enim rerum aliquam esse. 
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. 
+            Sequi harum amet illum eligendi, 
+            cupiditate repellat nostrum! 
+            Sunt harum eveniet quam necessitatibus. 
+            Labore magni sed pariatur officiis ab tempora, 
+            perspiciatis rerum.</p>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Atque eos nihil libero id ut ea in temporibus eligendi qui 
+            magni aspernatur, 
+            quidem eum rerum
+            cum laboriosam saepe aliquid recusandae commodi! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tempora nostrum distinctio mollitia, 
+            ipsam tempore fugiat porro, 
+            ullam illo voluptatibus corrupti nesciunt ipsa? 
+            Odio culpa totam fugiat illo voluptatem cupiditate tempore. 
+            Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit. 
+            Id accusamus voluptas odit iste ullam reprehenderit soluta, 
+            voluptatem a, 
+            sit eos aliquam fugit perferendis esse sapiente repellendus nulla est blanditiis nihil. 
+            Lorem ipsum, 
+            dolor sit amet consectetur adipisicing elit. 
+            Odio provident ipsa libero necessitatibus assumenda nobis id non atque eum in ullam, 
+            ducimus quia sequi optio eveniet delectus ut. Magni, dicta. 
+            Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit.
+            Ullam animi aut recusandae dolorem commodi quod amet consequuntur placeat inventore, 
+            velit quam error, est aliquid provident natus enim rerum aliquam esse. 
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. 
+            Sequi harum amet illum eligendi, 
+            cupiditate repellat nostrum! 
+            Sunt harum eveniet quam necessitatibus. 
+            Labore magni sed pariatur officiis ab tempora, 
+            perspiciatis rerum.</p>
+            <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Atque eos nihil libero id ut ea in temporibus eligendi qui 
+            magni aspernatur, 
+            quidem eum rerum
+            cum laboriosam saepe aliquid recusandae commodi! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tempora nostrum distinctio mollitia, 
+            ipsam tempore fugiat porro, 
+            ullam illo voluptatibus corrupti nesciunt ipsa? 
+            Odio culpa totam fugiat illo voluptatem cupiditate tempore. 
+            Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit. 
+            Id accusamus voluptas odit iste ullam reprehenderit soluta, 
+            voluptatem a, 
+            sit eos aliquam fugit perferendis esse sapiente repellendus nulla est blanditiis nihil. 
+            Lorem ipsum, 
+            dolor sit amet consectetur adipisicing elit. 
+            Odio provident ipsa libero necessitatibus assumenda nobis id non atque eum in ullam, 
+            ducimus quia sequi optio eveniet delectus ut. Magni, dicta. 
+            Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit.
+            Ullam animi aut recusandae dolorem commodi quod amet consequuntur placeat inventore, 
+            velit quam error, est aliquid provident natus enim rerum aliquam esse. 
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. 
+            Sequi harum amet illum eligendi, 
+            cupiditate repellat nostrum! 
+            Sunt harum eveniet quam necessitatibus. 
+            Labore magni sed pariatur officiis ab tempora, 
+            perspiciatis rerum.</p>
+            <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Atque eos nihil libero id ut ea in temporibus eligendi qui 
+            magni aspernatur, 
+            quidem eum rerum
+            cum laboriosam saepe aliquid recusandae commodi! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tempora nostrum distinctio mollitia, 
+            ipsam tempore fugiat porro, 
+            ullam illo voluptatibus corrupti nesciunt ipsa? 
+            Odio culpa totam fugiat illo voluptatem cupiditate tempore. 
+            Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit. 
+            Id accusamus voluptas odit iste ullam reprehenderit soluta, 
+            voluptatem a, 
+            sit eos aliquam fugit perferendis esse sapiente repellendus nulla est blanditiis nihil. 
+            Lorem ipsum, 
+            dolor sit amet consectetur adipisicing elit. 
+            Odio provident ipsa libero necessitatibus assumenda nobis id non atque eum in ullam, 
+            ducimus quia sequi optio eveniet delectus ut. Magni, dicta. 
+            Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit.
+            Ullam animi aut recusandae dolorem commodi quod amet consequuntur placeat inventore, 
+            velit quam error, est aliquid provident natus enim rerum aliquam esse. 
+            Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. 
+            Sequi harum amet illum eligendi, 
+            cupiditate repellat nostrum! 
+            Sunt harum eveniet quam necessitatibus. 
+            Labore magni sed pariatur officiis ab tempora, 
+            perspiciatis rerum.</p>
+    </main>
+
+</div>
+    
+</body>
+</html> 
